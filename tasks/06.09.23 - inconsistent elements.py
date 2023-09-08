@@ -1,13 +1,14 @@
 def find_inconsistency(arr):
     indexes: list = []
-    next_num: int = arr[0]
-    for i in range(len(arr)-1):
-        if (arr[i+1] != next_num+1):
-            indexes.append(i+1)
-        next_num = arr[i+1]
+    for i in range(1, len(arr)):
+        if (arr[i] != arr[i-1]+1):
+            indexes.append(i)
+    
     if indexes:
         return indexes
     else:
         return "Не найдено"
 
-print(*find_inconsistency([1, 2, 3, 4]))
+inp = list(map(int, input().split()))
+# [1, 2, 4, 5, 6, 10, 15]
+print(*find_inconsistency(inp))
