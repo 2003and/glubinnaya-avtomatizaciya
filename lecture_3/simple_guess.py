@@ -4,7 +4,7 @@
 
 def guess(num: int) -> int:
     ans = "Трудно"
-    for i in range(max(num//2,2)):
+    for i in range(max(num//2,2)+1):
         if i*i == num:
             ans = i
             break
