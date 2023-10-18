@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../wiseotester-generators"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Downloads/for dmitry"
+		},
+		{
+			"path": "../../../opt/SBCharCreator-master"
+		}
+	],
+	"settings": {
+		"dotnet.defaultSolution": "SBCharCreator-master/SBCharCreator.sln"
+	}
+}
